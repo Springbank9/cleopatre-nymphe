@@ -12,7 +12,10 @@
         <nav>
             <div class="wrapper">
                 <div class="logo"><a href="#">Edinglassie | Glenmarkie</a></div>
+                <input type="radio" name="slide" id="menu-btn">
+                <input type="radio" name="slide" id="cancel-btn">
                 <ul class="nav-links">
+                    <label for="cancel-btn" class="btn cancel-btn"><i class="fas fa-times"></i></label>
                     <li><a href="#">About</a></li>
                     <li>
                         <a href="#" class="desktop-item">Dropdown Menu</a>
@@ -24,7 +27,10 @@
                             <li><a href="#">Drop Menu 3</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">What We Do</a>
+                    <li>
+                        <a href="#" class="desktop-item">Mega Menu</a>
+                        <input type="checkbox" id="showMega">
+                        <label for="showMega" class="mobile-item">Mega Menu</label>
                     <div class="mega-box">
                         <div class="content">
                         <div class="row">
@@ -58,6 +64,7 @@
                 </li>
                     <li><a href="#">Visit Us</a></li>
                 </ul>
+                <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
             </div>
         </nav>
     </body>
