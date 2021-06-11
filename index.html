@@ -6,66 +6,136 @@
         <title>Mege Menu | Edinglassie Website</title>
         <link rel="stylesheet" href="css/style.css">
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     </head>
 
     <body>
-        <nav>
-            <div class="wrapper">
-                <div class="logo"><a href="#">Edinglassie | Glenmarkie</a></div>
-                <input type="radio" name="slide" id="menu-btn">
-                <input type="radio" name="slide" id="cancel-btn">
-                <ul class="nav-links">
-                    <label for="cancel-btn" class="btn cancel-btn"><i class="fas fa-times"></i></label>
-                    <li><a href="#">About</a></li>
-                    <li>
-                        <a href="#" class="desktop-item">Dropdown Menu</a>
-                        <input type="checkbox" id="showDrop">
-                        <label for="showDrop" class="mobile-item">Dropdown Menu</label>
-                        <ul class="drop-menu">
-                            <li><a href="#">Drop Menu 1</a></li>
-                            <li><a href="#">Drop Menu 2</a></li>
-                            <li><a href="#">Drop Menu 3</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#" class="desktop-item">Mega Menu</a>
-                        <input type="checkbox" id="showMega">
-                        <label for="showMega" class="mobile-item">Mega Menu</label>
-                    <div class="mega-box">
-                        <div class="content">
-                        <div class="row">
-                            <img src="images/herd.jpg" alt="herd">
-                            <div class="row">
-                            <header>Biodiversity</header>
-                            <ul class="mega-links">
-                                <li><a href="#">Moorland</a></li>
-                            <li><a href="#">Conservation</a></li>
-                            <li><a href="#">Species</a></li>
-                            </ul>
-                        </div>
-                        <div class="row">
-                            <header>Farming Practice</header>
-                            <ul class="mega-links">
-                            <li><a href="#">Native Breeds</a></li>
-                            <li><a href="#">Beef Shorthorn Herd</a></li>
-                            <li><a href="#">Black Face</a></li>
-                            </ul>
-                        </div>
-                         <div class="row">
-                            <header>Farming Practice</header>
-                            <ul class="mega-links">
-                            <li><a href="#">Native Breeds</a></li>
-                            <li><a href="#">Beef Shorthorn Herd</a></li>
-                            <li><a href="#">Black Face</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                </li>
-                    <li><a href="#">Visit Us</a></li>
-                </ul>
-                <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
-            </div>
-        </nav>
+     <div class="menu-container">
+  <div class="menu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="http://marioloncarek.com">About</a>
+        <ul>
+          <li><a href="#">School</a>
+            <ul>
+              <li><a href="#">Lidership</a></li>
+              <li><a href="#">History</a></li>
+              <li><a href="#">Locations</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Study</a>
+            <ul>
+              <li><a href="#">Undergraduate</a></li>
+              <li><a href="#">Masters</a></li>
+              <li><a href="#">International</a></li>
+              <li><a href="#">Online</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Research</a>
+            <ul>
+              <li><a href="#">Undergraduate research</a></li>
+              <li><a href="#">Masters research</a></li>
+              <li><a href="#">Funding</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Something</a>
+            <ul>
+              <li><a href="#">Sub something</a></li>
+              <li><a href="#">Sub something</a></li>
+              <li><a href="#">Sub something</a></li>
+              <li><a href="#">Sub something</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#">News</a>
+        <ul>
+          <li><a href="#">Today</a></li>
+          <li><a href="#">Calendar</a></li>
+          <li><a href="#">Sport</a></li>
+        </ul>
+      </li>
+      <li><a href="http://marioloncarek.com">Contact</a>
+        <ul>
+          <li><a href="#">School</a>
+            <ul>
+              <li><a href="#">Lidership</a></li>
+              <li><a href="#">History</a></li>
+              <li><a href="#">Locations</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Study</a>
+            <ul>
+              <li><a href="#">Undergraduate</a></li>
+              <li><a href="#">Masters</a></li>
+              <li><a href="#">International</a></li>
+              <li><a href="#">Online</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Study</a>
+            <ul>
+              <li><a href="#">Undergraduate</a></li>
+              <li><a href="#">Masters</a></li>
+              <li><a href="#">International</a></li>
+              <li><a href="#">Online</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Empty sub</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="css-slider-wrapper">
+  <input type="radio" name="slider" class="slide-radio1" checked id="slider_1">
+  <input type="radio" name="slider" class="slide-radio2" id="slider_2">
+  <input type="radio" name="slider" class="slide-radio3" id="slider_3">
+  <input type="radio" name="slider" class="slide-radio4" id="slider_4">
+  <div class="slider-pagination">
+    <label for="slider_1" class="page1"></label>
+    <label for="slider_2" class="page2"></label>
+    <label for="slider_3" class="page3"></label>
+    <label for="slider_4" class="page4"></label>
+  </div>
+  <div class="next control">
+    <label for="slider_1" class="numb1"><i class="fa fa-arrow-circle-right"></i></label>
+    <label for="slider_2" class="numb2"><i class="fa fa-arrow-circle-right"></i></label>
+    <label for="slider_3" class="numb3"><i class="fa fa-arrow-circle-right"></i></label>
+    <label for="slider_4" class="numb4"><i class="fa fa-arrow-circle-right"></i></label>
+  </div>
+  <div class="previous control">
+    <label for="slider_1" class="numb1"><i class="fa fa-arrow-circle-left"></i></label>
+    <label for="slider_2" class="numb2"><i class="fa fa-arrow-circle-left"></i></label>
+    <label for="slider_3" class="numb3"><i class="fa fa-arrow-circle-left"></i></label>
+    <label for="slider_4" class="numb4"><i class="fa fa-arrow-circle-left"></i></label>
+  </div>
+  <div class="slider slide1">
+    <div>
+      <h2>Css Based slider</h2>
+       <a href="#" class="button">Learn More</a> </div>
+  </div>
+  <div class="slider slide2">
+    <div>
+      <h2>CSS Slider without use of any javascript or jQuery</h2>
+       <a href="#" class="button">Learn More</a> </div>
+  </div>
+  <div class="slider slide3">
+    <div>
+      <h2>Full screen animation slider</h2>
+       <a href="#" class="button">Learn More</a> </div>
+  </div>
+  <div class="slider slide4">
+    <div>
+      <h2>css3 slider</h2>
+       <a href="#" class="button">Learn More</a> </div>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
     </body>
 </html>
