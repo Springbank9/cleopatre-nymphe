@@ -224,6 +224,18 @@ Mobile style's
   }
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
+.image {
+    height: auto;
+    width: 100%;
+    max-width: 1175px;
+    margin: 0 auto;
+}
+
 /* Slider wrapper*/
 .css-slider-wrapper  {
   display: block;
@@ -239,8 +251,8 @@ min-height: 768px;
 }
 /* Slider */
 .slider  {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background: red;
   position: absolute;
   left: 0;
@@ -265,10 +277,13 @@ min-height: 768px;
 
 }
 
+
 /* each slide backgound color */  
-.slide1 {
-  background-image: url(/images/black-face-hill.jpeg);
+.slide1  {
+  
   left: 0;
+  width: 100%;
+  height: 100%;
   
 }
 .slide2 {
