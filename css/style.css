@@ -157,13 +157,10 @@ p {
   line-height: 2;
 }
 
-.content {
-  padding: 50px 2% 250px;
-}
 
 .hero {
   position: relative;
-  background: url(http://www.philippefercha.com/cd/toggle-menu-bg.jpg) no-repeat center center fixed;
+  background: url(/images/herd.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -244,4 +241,16 @@ p {
     -ms-transform: translateY(20px);
     transform: translateY(20px);
   }
+}
+
+
+.login,
+.image {
+  min-height: 100vh;
+}
+
+.bg-image {
+  background-image: url('/images/grouse.jpg');
+  background-size: cover;
+  background-position: center center;
 }
